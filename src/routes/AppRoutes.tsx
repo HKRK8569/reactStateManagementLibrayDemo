@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "../App";
+import Top from "../pages/Top";
 
 const AppRoutes: React.FC = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <App />,
+      element: <Top />,
     },
   ]);
   return <RouterProvider router={router} />;
