@@ -2,6 +2,7 @@ import zustandLogo from "@/assets/zustand.svg";
 import jotaiLogo from "@/assets/jotai.svg";
 import recoilLogo from "@/assets/recoil.svg";
 import { Link } from "react-router-dom";
+import { PAGES } from "@/routes/Pages";
 
 type Props = {
   img: string;
@@ -18,7 +19,7 @@ const links = [
   {
     img: jotaiLogo,
     alt: "jotai logo",
-    href: "/",
+    href: PAGES.JOTAI,
   },
   {
     img: recoilLogo,
