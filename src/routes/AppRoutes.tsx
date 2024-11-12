@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Top from "../pages/Top";
 import { PAGES } from "./Pages";
-import JotaiTodoList from "../pages/JotaiTodoList";
+import Jotai from "../pages/Jotai";
 
 const AppRoutes: React.FC = () => {
   const router = createBrowserRouter([
@@ -11,7 +11,7 @@ const AppRoutes: React.FC = () => {
     },
     {
       path: PAGES.JOTAI,
-      element: <JotaiTodoList />,
+      element: <Jotai />,
     },
   ]);
   return <RouterProvider router={router} />;
