@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 export type Todo = {
   id: string;
   state: boolean;
-  name: string;
+  title: string;
   isEdit: boolean;
 };
 
@@ -35,7 +35,7 @@ const TodoItem = ({
         />
         {todo.isEdit ? (
           <input
-            value={todo.name}
+            value={todo.title}
             onChange={(event) => {
               changeTodoTitle(todo.id, event.target.value);
             }}
@@ -43,7 +43,7 @@ const TodoItem = ({
           />
         ) : (
           <p className={twMerge("text-2xl", todo.state ? "line-through" : "")}>
-            {todo.name}
+            {todo.title}
           </p>
         )}
       </div>

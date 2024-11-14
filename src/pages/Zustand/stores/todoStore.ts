@@ -3,8 +3,8 @@ import { create } from "zustand";
 
 type Store = {
   todos: Todo[];
-  addTodo: (value: string) => void;
-  changeTodoTitle: (id: string, value: string) => void;
+  addTodo: (title: string) => void;
+  changeTodoTitle: (id: string, title: string) => void;
   deleteTodo: (id: string) => void;
   toggleTodoState: (id: string) => void;
   toggleIsEdit: (id: string) => void;
@@ -17,7 +17,7 @@ const useTodoStore = create<Store>((set) => ({
         ...state.todos,
         {
           id: crypto.randomUUID(),
-          name: title,
+          title: title,
           isEdit: false,
           state: false,
         },

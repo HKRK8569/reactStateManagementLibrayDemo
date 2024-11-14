@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 type Props = {
-  addTodo: (value: string) => void;
+  addTodo: (title: string) => void;
 };
 const TodoInput = ({ addTodo }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
