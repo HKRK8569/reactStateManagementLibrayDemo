@@ -14,7 +14,7 @@ const links = [
   {
     img: zustandLogo,
     alt: "zustand logo",
-    href: "/",
+    href: PAGES.ZUSTAND,
   },
   {
     img: jotaiLogo,

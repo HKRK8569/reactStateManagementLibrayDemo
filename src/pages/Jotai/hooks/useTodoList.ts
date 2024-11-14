@@ -4,13 +4,13 @@ import todoAtom from "../atoms/todoAtom";
 const useTodoList = () => {
   const [todos, setTodos] = useAtom(todoAtom);
 
-  const changeTodoTitle = (id: string, value: string) => {
+  const changeTodoTitle = (id: string, title: string) => {
     setTodos(
       todos.map((todo) =>
         todo.id === id
           ? {
               ...todo,
-              name: value,
+              name: title,
             }
           : todo
       )
@@ -35,7 +35,7 @@ const useTodoList = () => {
       ...todos,
       {
         id: crypto.randomUUID(),
-        name: value,
+        title: value,
         isEdit: false,
         state: false,
       },
