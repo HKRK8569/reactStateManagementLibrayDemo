@@ -1,4 +1,5 @@
 import zustandLogo from "@/assets/zustand.svg";
+import ZustandTodoList from "./components/ZustandTodoList";
 
 const Zustand = () => {
   return (
@@ -7,7 +8,9 @@ const Zustand = () => {
         <header className="mt-20 flex flex-col items-center">
           <img src={zustandLogo} className="h-20" alt="react logo" />
         </header>
-        <div className="mt-10"></div>
+        <div className="mt-10">
+          <ZustandTodoList />
+        </div>
       </div>
     </div>
   );

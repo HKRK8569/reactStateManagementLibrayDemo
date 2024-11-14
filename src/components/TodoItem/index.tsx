@@ -1,5 +1,11 @@
-import { Todo } from "@/pages/Jotai/atoms/todoAtom";
 import { twMerge } from "tailwind-merge";
+
+export type Todo = {
+  id: string;
+  state: boolean;
+  name: string;
+  isEdit: boolean;
+};
 
 type Props = {
   todo: Todo;

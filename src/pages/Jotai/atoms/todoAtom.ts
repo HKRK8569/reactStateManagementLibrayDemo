@@ -1,11 +1,5 @@
+import { Todo } from "@/components/TodoItem";
 import { atom } from "jotai";
-
-export type Todo = {
-  id: string;
-  state: boolean;
-  name: string;
-  isEdit: boolean;
-};
 
 const todoAtom = atom<Todo[]>([
   {
