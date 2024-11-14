@@ -5,6 +5,7 @@
 - Jotai
   - http://localhost:5173/jotai
 - Zustand
+  - http://localhost:5173/zustand
 - recoil
 
 ## 起動方法
