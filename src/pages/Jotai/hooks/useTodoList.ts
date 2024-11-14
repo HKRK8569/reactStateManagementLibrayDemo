@@ -35,7 +35,7 @@ const useTodoList = () => {
       ...todos,
       {
         id: crypto.randomUUID(),
-        name: value,
+        title: value,
         isEdit: false,
         state: false,
       },

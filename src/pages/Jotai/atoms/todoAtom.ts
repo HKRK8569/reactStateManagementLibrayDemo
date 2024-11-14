@@ -5,7 +5,7 @@ const todoAtom = atom<Todo[]>([
   {
     id: "9b4ab02c-c641-7d1c-2f11-de64d8cdac77",
     state: false,
-    name: "テストテスト",
+    title: "テストテスト",
     isEdit: false,
   },
 ]);
