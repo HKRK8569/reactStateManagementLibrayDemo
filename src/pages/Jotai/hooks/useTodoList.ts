@@ -10,7 +10,7 @@ const useTodoList = () => {
         todo.id === id
           ? {
               ...todo,
-              name: title,
+              title: title,
             }
           : todo
       )
