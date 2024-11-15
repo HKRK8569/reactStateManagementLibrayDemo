@@ -24,7 +24,7 @@ const links = [
   {
     img: recoilLogo,
     alt: "recoil logo",
-    href: "/",
+    href: PAGES.RECOIL,
   },
 ];
 
