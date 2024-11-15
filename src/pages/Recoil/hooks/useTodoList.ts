@@ -1,8 +1,8 @@
-import { useAtom } from "jotai";
-import todoAtom from "../atoms/todoAtom";
+import { useRecoilState } from "recoil";
+import todoState from "../atoms/TodoState";
 
 const useTodoList = () => {
-  const [todos, setTodos] = useAtom(todoAtom);
+  const [todos, setTodos] = useRecoilState(todoState);
 
   const changeTodoTitle = (id: string, title: string) => {
     setTodos(
@@ -10,7 +10,7 @@ const useTodoList = () => {
         todo.id === id
           ? {
               ...todo,
-              title: title,
+              title,
             }
           : todo
       )
