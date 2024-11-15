@@ -20,6 +20,7 @@ const RecoilTodoList = () => {
         {todos.map((todo) => {
           return (
             <TodoItem
+              key={todo.id}
               todo={todo}
               changeTodoTitle={changeTodoTitle}
               toggleIsEdit={toggleIsEdit}

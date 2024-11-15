@@ -44,7 +44,14 @@ const LogoPageLinks: React.FC = () => {
   return (
     <div className="grid grid-cols-3 gap-10 mt-10 px-4">
       {links.map((link) => {
-        return <LogoPageLink img={link.img} alt={link.alt} href={link.href} />;
+        return (
+          <LogoPageLink
+            key={link.alt}
+            img={link.img}
+            alt={link.alt}
+            href={link.href}
+          />
+        );
       })}
     </div>
   );
