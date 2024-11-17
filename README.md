@@ -7,6 +7,7 @@
 - Zustand
   - http://localhost:5173/zustand
 - recoil
+  - http://localhost:5173/recoil
 
 ## 起動方法
 
