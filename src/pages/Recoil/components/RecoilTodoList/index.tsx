@@ -1,9 +1,9 @@
 import TodoInput from "@/components/TodoInput";
 
 import TodoItem from "@/components/TodoItem";
-import useTodoStore from "../stores/todoStore";
+import useTodoList from "../../hooks/useTodoList";
 
-const ZustandTodoList = () => {
+const RecoilTodoList = () => {
   const {
     todos,
     addTodo,
@@ -11,7 +11,7 @@ const ZustandTodoList = () => {
     toggleIsEdit,
     toggleTodoState,
     deleteTodo,
-  } = useTodoStore((state) => state);
+  } = useTodoList();
 
   return (
     <>
@@ -34,4 +34,4 @@ const ZustandTodoList = () => {
   );
 };
 
-export default ZustandTodoList;
+export default RecoilTodoList;
